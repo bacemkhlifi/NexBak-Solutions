@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+import { NetlifyContactForm } from "@/components/netlify-contact-form";
 import { Section } from "@/components/section";
 
 export const metadata: Metadata = {
@@ -12,66 +13,7 @@ export default function ContactPage() {
     <>
       <Section className="bg-navy pt-36 text-white" eyebrow="Contact" title="Tell us what you want to build" description="Need a simple showcase website, e-commerce presence, or order request flow? Send us your details and NexBak Solutions will help you launch a clean digital experience.">
         <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr]">
-          <form
-            name="project-request"
-            method="POST"
-            action="/thank-you"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            className="rounded-[2rem] border border-white/10 bg-white/5 p-6 sm:p-8"
-          >
-            <input type="hidden" name="form-name" value="project-request" />
-            <p className="hidden">
-              <label>
-                Do not fill this out if you are human: <input name="bot-field" />
-              </label>
-            </p>
-            <div className="grid gap-5 sm:grid-cols-2">
-              {[
-                { label: "Full name", name: "name", type: "text" },
-                { label: "Work email", name: "email", type: "email" },
-                { label: "Company", name: "company", type: "text" },
-                { label: "Phone", name: "phone", type: "tel" }
-              ].map((field) => (
-                <label key={field.name} className="grid gap-2 text-sm text-slate-300">
-                  {field.label}
-                  <input
-                    name={field.name}
-                    type={field.type}
-                    required={field.name === "name" || field.name === "email" || field.name === "phone"}
-                    className="rounded-2xl border border-white/10 bg-navy/70 px-4 py-3 text-white outline-none ring-cyan/30 focus:ring-4"
-                  />
-                </label>
-              ))}
-            </div>
-            <label className="mt-5 grid gap-2 text-sm text-slate-300">
-              What do you need?
-              <select
-                name="project_type"
-                required
-                className="rounded-2xl border border-white/10 bg-navy/70 px-4 py-3 text-white outline-none ring-cyan/30 focus:ring-4"
-              >
-                <option value="">Select a service</option>
-                <option value="Showcase website">Simple showcase website</option>
-                <option value="E-commerce order website">E-commerce site with order requests</option>
-                <option value="Custom software">Custom software or platform</option>
-                <option value="Consulting">IT consulting</option>
-              </select>
-            </label>
-            <label className="mt-5 grid gap-2 text-sm text-slate-300">
-              Project details
-              <textarea
-                name="message"
-                rows={6}
-                required
-                placeholder="Tell us about your products, services, order process, timeline, and budget."
-                className="rounded-2xl border border-white/10 bg-navy/70 px-4 py-3 text-white outline-none ring-cyan/30 focus:ring-4"
-              />
-            </label>
-            <button type="submit" className="mt-6 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-cyan px-6 text-sm font-semibold text-navy transition hover:bg-white">
-              Send Message <Send className="h-4 w-4" />
-            </button>
-          </form>
+          <NetlifyContactForm />
           <div className="grid gap-5">
             {[
               { icon: Mail, label: "Email", value: "hello@nexbaksolutions.com" },

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowUpRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { NetlifyNewsletterForm } from "@/components/netlify-newsletter-form";
 import { navItems, services } from "@/lib/data";
 
 export function Footer() {
@@ -59,20 +60,7 @@ export function Footer() {
             <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
               Monthly insights on product strategy, cloud systems, automation, and enterprise software.
             </p>
-            <form name="newsletter" method="POST" action="/thank-you" data-netlify="true" className="mt-5 flex gap-2">
-              <input type="hidden" name="form-name" value="newsletter" />
-              <input
-                name="email"
-                type="email"
-                placeholder="Email address"
-                aria-label="Email address"
-                required
-                className="min-w-0 flex-1 rounded-full border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-electric/30 focus:ring-4 dark:border-white/10 dark:bg-navy"
-              />
-              <button type="submit" aria-label="Subscribe" className="grid h-12 w-12 place-items-center rounded-full bg-electric text-white">
-                <ArrowUpRight className="h-4 w-4" />
-              </button>
-            </form>
+            <NetlifyNewsletterForm />
           </div>
         </div>
         <div className="mt-12 flex flex-col gap-4 border-t border-slate-200 pt-8 text-sm text-slate-500 dark:border-white/10 sm:flex-row sm:items-center sm:justify-between">

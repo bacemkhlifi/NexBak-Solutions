@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Netlify Forms</title>
+  </head>
+  <body>
+    <form name="project-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="project-request" />
+      <input name="bot-field" />
+      <input name="name" type="text" />
+      <input name="email" type="email" />
+      <input name="company" type="text" />
+      <input name="phone" type="tel" />
+      <select name="project_type">
+        <option value="Showcase website">Simple showcase website</option>
+        <option value="E-commerce order website">E-commerce site with order requests</option>
+        <option value="Custom software">Custom software or platform</option>
+        <option value="Consulting">IT consulting</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
+
+    <form name="newsletter" method="POST" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="newsletter" />
+      <input name="email" type="email" />
+    </form>
+  </body>
+</html>
