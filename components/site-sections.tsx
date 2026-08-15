@@ -209,7 +209,7 @@ export function FinalCTA() {
             Turn your next platform idea into a scalable digital advantage.
           </h2>
           <p className="mt-5 text-base leading-8 text-slate-300">
-            Bring us your workflow, product, or transformation challenge. We will help shape it into a polished, secure, high-performing solution.
+            Bring us your website, e-commerce, workflow, product, or transformation challenge. We will help shape it into a polished, secure, high-performing solution.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <ButtonLink href="/contact">Start Your Project</ButtonLink>

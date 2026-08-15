@@ -45,9 +45,9 @@ export const services = [
   {
     title: "Web Development",
     icon: Globe2,
-    description: "High-performance web apps, SaaS products, portals, and business platforms built with modern stacks.",
-    features: ["Next.js platforms", "Role-based portals", "API-first builds"],
-    benefits: "Fast, elegant digital products that customers and teams enjoy using."
+    description: "Modern websites, e-commerce vitrines, order request flows, SaaS products, portals, and business platforms.",
+    features: ["Showcase websites", "Order request forms", "Next.js platforms"],
+    benefits: "Fast, elegant web experiences where customers can discover your offer and send commandes easily."
   },
   {
     title: "Mobile Development",
@@ -135,8 +135,8 @@ export const projects = [
   {
     title: "E-commerce Platform",
     category: "Commerce",
-    description: "A premium storefront with inventory sync, secure checkout, promotions, and analytics.",
-    impact: "Delivered a 2.4x faster checkout flow and improved conversion tracking.",
+    description: "A premium e-commerce vitrine where customers browse products and send order requests through Netlify-powered forms.",
+    impact: "Helped the business receive structured commandes directly from interested buyers.",
     technologies: ["Next.js", "Stripe", "AWS", "PostgreSQL"],
     gradient: "from-indigo-500 via-blue-500 to-cyan-500"
   },
@@ -180,7 +180,7 @@ export const testimonials = [
 ];
 
 export const stats = [
-  { value: "40+", label: "Products delivered" },
+  { value: "40+", label: "Websites and products delivered" },
   { value: "12", label: "Industry verticals" },
   { value: "99.9%", label: "Platform uptime targets" },
   { value: "6x", label: "Average workflow speed-up" }
@@ -219,7 +219,7 @@ export const positions = [
 export const faq = [
   {
     question: "What type of companies does NexBak Solutions work with?",
-    answer: "We work with startups, growing SMEs, and enterprise teams that need reliable software, modern workflows, or technical strategy."
+    answer: "We work with startups, growing SMEs, e-commerce sellers, and enterprise teams that need showcase websites, order request flows, reliable software, modern workflows, or technical strategy."
   },
   {
     question: "Can you build both the design and development?",

@@ -15,8 +15,12 @@ export function Footer() {
               <span className="font-display text-lg font-semibold">NexBak Solutions</span>
             </Link>
             <p className="mt-5 max-w-sm text-sm leading-7 text-slate-600 dark:text-slate-400">
-              Enterprise-ready consulting, software development, automation, and digital platforms for ambitious teams.
+              Showcase websites, e-commerce order flows, software development, and digital platforms from Sfax, Tunisia.
             </p>
+            <div className="mt-5 grid gap-2 text-sm text-slate-600 dark:text-slate-400">
+              <a href="tel:+21623109107" className="hover:text-electric">+216 23 109 107</a>
+              <span>Sfax, Tunisia</span>
+            </div>
             <div className="mt-6 flex gap-3">
               {[Linkedin, Twitter, Github, Mail].map((Icon, index) => (
                 <a
@@ -55,11 +59,14 @@ export function Footer() {
             <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
               Monthly insights on product strategy, cloud systems, automation, and enterprise software.
             </p>
-            <form className="mt-5 flex gap-2">
+            <form name="newsletter" method="POST" action="/thank-you" data-netlify="true" className="mt-5 flex gap-2">
+              <input type="hidden" name="form-name" value="newsletter" />
               <input
+                name="email"
                 type="email"
                 placeholder="Email address"
                 aria-label="Email address"
+                required
                 className="min-w-0 flex-1 rounded-full border border-slate-200 bg-white px-4 py-3 text-sm outline-none ring-electric/30 focus:ring-4 dark:border-white/10 dark:bg-navy"
               />
               <button type="submit" aria-label="Subscribe" className="grid h-12 w-12 place-items-center rounded-full bg-electric text-white">

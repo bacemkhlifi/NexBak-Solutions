@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "NexBak Solutions builds modern digital solutions through IT consulting, enterprise software, web platforms, mobile applications, and automation."
+    "NexBak Solutions builds showcase websites, e-commerce order request flows, IT consulting solutions, web platforms, mobile applications, and automation."
 };
 
 export default function HomePage() {
@@ -39,6 +39,9 @@ export default function HomePage() {
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
               NexBak Solutions helps companies accelerate growth through IT consulting, enterprise software, web platforms, and mobile applications.
             </p>
+            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
+              We also help e-commerce businesses launch simple website vitrines where customers can discover products and send order requests directly through the site.
+            </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/contact">Start Your Project</ButtonLink>
               <ButtonLink href="/services" variant="secondary">Explore Services</ButtonLink>
@@ -50,7 +53,7 @@ export default function HomePage() {
       <Section eyebrow="Trusted by focused teams" title="Digital foundations built for growth">
         <ClientLogos />
       </Section>
-      <Section id="services" eyebrow="What we do" title="Consulting and engineering for modern businesses" description="From strategy to launch and long-term support, NexBak combines product thinking, design craft, and senior engineering execution.">
+      <Section id="services" eyebrow="What we do" title="Consulting and websites for modern businesses" description="From simple showcase websites and order request flows to custom platforms, NexBak combines product thinking, design craft, and senior engineering execution.">
         <ServicesGrid limit={4} />
         <LinkedSectionCTA />
       </Section>
